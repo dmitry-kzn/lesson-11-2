@@ -6,7 +6,7 @@ pipeline {
             steps{
                 script {
                docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
-               image = docker.image('dmitrykzn/sborshik2')
+               image = docker.image('dmitrykzn/sborshik2:v2')
                image.pull() 
                  }
                }
