@@ -16,7 +16,7 @@ pipeline {
       stage('Run Docker container from image') {
           agent { 
             docker {
-              image 'registry.hub.docker.com/dmitrykzn/sborshik2'
+              image 'registry.hub.docker.com/dmitrykzn/sborshik2:v2'
               args '-u root:sudo -v /var/run/docker.sock:/var/run/docker.sock'
             }
           }   
