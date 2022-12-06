@@ -1,5 +1,3 @@
-!!!!!!!!!!!!!!! version with getting DockerFile from DockerHub
-
 pipeline {
     agent any
 
