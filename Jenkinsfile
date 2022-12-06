@@ -44,7 +44,7 @@ pipeline {
             steps {
               script {
                docker.withRegistry('https://registry.hub.docker.com', 'docker-hub-credentials') {
-               image = docker.image('dmitrykzn/war_with_apache_2:v1')
+               image = docker.image('dmitrykzn/war_with_apache_2:v2')
                image.push()
                }
               }
